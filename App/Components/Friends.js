@@ -126,7 +126,7 @@ class Friends extends Component{
             enableEmptySections={true}
             dataSource={this.state.dataSource}
             renderRow={this.renderRow.bind(this)} />
-            : <View></View>
+            : <View><Text>Add Friends</Text></View>
         }
       </View>
     )
