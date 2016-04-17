@@ -1,37 +1,49 @@
-# Project Sapphire
+## [fastlane match](https://github.com/fastlane/fastlane/tree/master/match)
 
-Welcome to Project Sapphire
+This repository contains all your certificates and provisioning profiles needed to build and sign your applications. They are encrypted using OpenSSL via a passphrase.
 
-> This project creates a map-based communications mechanism for users to share travel paths. The intended use is primarily for friends and family that would like to keep track of travel paths to ensure the traveller arrives safe and sound and within expectations.
+**Important:** Make sure this repository is set to private and only your team members have access to this repo.
 
-## Team
+Do not modify this file, as it gets overwritten every time you run `match`.
 
-  - __Product Owner__: Inje Yeo
-  - __Scrum Master__: Krista Moroder
-  - __Development Team Members__: Inje Yeo, Krista Moroder, Steven Tran, Tor Sinclair
+### Install [fastlane match](https://github.com/fastlane/fastlane/tree/master/match)
 
-## Table of Contents
+```
+sudo gem install match
+```
 
-1. [Usage](#Usage)
-1. [Requirements](#requirements)
-1. [Development](#development)
-    1. [Installing Dependencies](#installing-dependencies)
-    1. [Tasks](#tasks)
-1. [Team](Inje Yeo, Krista Moroder, Steven Tran, Tor Sinclair)
-1. [Contributing](#contributing)
+Make sure you have the latest version of the Xcode command line tools installed:
 
-## Usage
+```
+xcode-select --install
+```
 
-## Requirements
+### Usage
 
-## Development
+Navigate to your project folder and run
 
-### Installing Dependencies
+```
+match appstore
+```
+```
+match adhoc
+```
+```
+match development
+```
 
-From within the root directory:
+For more information open [fastlane match git repo](https://github.com/fastlane/fastlane/tree/master/match)
 
-### Roadmap
+### Content
 
-## Contributing
+#### certs
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
+This directory contains all your certificates with their private keys
+
+#### profiles
+
+This directory contains all provisioning profiles
+
+------------------------------------
+
+For more information open [fastlane match git repo](https://github.com/fastlane/fastlane/tree/master/match)
